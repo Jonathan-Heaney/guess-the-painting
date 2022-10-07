@@ -51,7 +51,7 @@ btn.addEventListener('click', function () {
   hideAnswer();
   setRandomPosition();
   setHeight();
-  setRandomWidth();
+  setWidth();
   pntg.style.transition = 'none';
 });
 
@@ -66,12 +66,8 @@ function setRandomPosition() {
   pntg.style.backgroundPosition = `${randomXPosition}%, ${randomYPosition}%`;
 }
 
-// function setRandomHeight() {
-//   let randomHeight = getRandomInt(5, 50);
-//   pntg.style.height = `${randomHeight}%`;
-// }
-
 let height = 20;
+let width = 20;
 
 function getHeight(newHeight) {
   height = newHeight;
@@ -80,6 +76,15 @@ function getHeight(newHeight) {
 function setHeight() {
   getHeight(height);
   pntg.style.height = `${height}%`;
+}
+
+function getWidth(newWidth) {
+  width = newWidth;
+}
+
+function setWidth() {
+  getWidth(width);
+  pntg.style.width = `${width}%`;
 }
 
 function setRandomWidth() {
