@@ -4,6 +4,7 @@ const info = document.querySelector('.info');
 painting.addEventListener('click', () => {
   painting.classList.add('check');
   showAnswer();
+  painting.style.backgroundPosition = 'center';
 });
 
 let btn = document.querySelector('.newPainting');
@@ -46,12 +47,19 @@ btn.addEventListener('click', function () {
   pntg.classList.remove('check');
   pntg.alt = paintings[random].alt;
   hideAnswer();
+  setRandomPosition();
   pntg.style.transition = 'none';
 });
 
 function hideAnswer() {
   info.style.opacity = 0;
   info.style.pointerEvents = 'none';
+}
+
+function setRandomPosition() {
+  let randomPosition = Math.floor(Math.random() * 100);
+  pntg.style.backgroundPosition = `${randomPosition}%`;
+  console.log(randomPosition);
 }
 
 function showAnswer() {
