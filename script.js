@@ -4,7 +4,6 @@ const info = document.querySelector('.info');
 painting.addEventListener('click', () => {
   painting.classList.add('check');
   showAnswer();
-  painting.style.transition = 'all 0.4s ease-in';
 });
 
 let btn = document.querySelector('.newPainting');
