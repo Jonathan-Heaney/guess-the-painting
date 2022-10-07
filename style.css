@@ -69,10 +69,6 @@ h5 {
   pointer-events: none;
   /* border: 2px solid blue; */
 }
-/* 
-.hidden {
-  display: none;
-} */
 
 .answer {
   display: flex;

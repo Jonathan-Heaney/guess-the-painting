@@ -50,7 +50,7 @@ btn.addEventListener('click', function () {
   pntg.alt = paintings[random].alt;
   hideAnswer();
   setRandomPosition();
-  setRandomHeight();
+  setHeight();
   setRandomWidth();
   pntg.style.transition = 'none';
 });
@@ -66,12 +66,21 @@ function setRandomPosition() {
   pntg.style.backgroundPosition = `${randomXPosition}%, ${randomYPosition}%`;
 }
 
-function setRandomHeight() {
-  let randomHeight = getRandomInt(5, 50);
-  pntg.style.height = `${randomHeight}%`;
+// function setRandomHeight() {
+//   let randomHeight = getRandomInt(5, 50);
+//   pntg.style.height = `${randomHeight}%`;
+// }
+
+let height = 20;
+
+function getHeight(newHeight) {
+  height = newHeight;
 }
 
-function getDimensions() {}
+function setHeight() {
+  getHeight(height);
+  pntg.style.height = `${height}%`;
+}
 
 function setRandomWidth() {
   let randomWidth = getRandomInt(5, 50);
