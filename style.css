@@ -45,7 +45,6 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* border: 2px solid red; */
 }
 
 .hidden {
@@ -54,14 +53,11 @@ h5 {
 }
 
 .painting {
-  background-image: url(img/sunday-in-the-park.jpeg);
   background-repeat: no-repeat;
-  background-position: 0%;
   height: 20%;
   width: 20%;
   cursor: pointer;
   border-radius: 5px;
-  /* border: 2px solid green; */
 }
 
 .check {
@@ -79,7 +75,6 @@ h5 {
   margin-bottom: 1.5em;
   opacity: 0;
   pointer-events: none;
-  /* border: 2px solid blue; */
 }
 
 .answer {

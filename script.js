@@ -15,6 +15,7 @@ startBtn.addEventListener('click', () => {
   subheading.classList.remove('hidden');
   container.classList.remove('hidden');
   startBtn.remove();
+  setNewPainting();
 });
 
 // Constructor function to add new paintings
@@ -47,8 +48,15 @@ const theKiss = new Painting(
   '1907-1908'
 );
 
+const sundayAfternoon = new Painting(
+  'img/sunday-in-the-park.jpeg',
+  'A Sunday Afternoon on the Island of La Grande Jatte',
+  'Georges Seurat',
+  '1884-1886'
+);
+
 // Add all paintings created with the constructor function to the paintings array
-const paintings = [birthOfVenus, starryNight, theKiss];
+const paintings = [birthOfVenus, starryNight, theKiss, sundayAfternoon];
 
 // Event listener when you click on the small version of the painting to check the answer.
 // Shows the full painting and the information/answer
