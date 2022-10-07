@@ -51,15 +51,17 @@ painting.addEventListener('click', () => {
 });
 
 // Event listener for the 'New Painting' button
-newPaintingBtn.addEventListener('click', function () {
-  setNewPainting();
+newPaintingBtn.addEventListener('click', setNewPainting);
+
+function setNewPainting() {
+  setPaintingInfo();
   hideAnswer();
   setRandomPosition();
   setHeight();
   setWidth();
-});
+}
 
-function setNewPainting() {
+function setPaintingInfo() {
   let random = Math.floor(Math.random() * paintings.length);
   title.innerText = paintings[random].title;
   artist.innerText = paintings[random].artist;
