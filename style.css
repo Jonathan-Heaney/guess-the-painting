@@ -58,6 +58,7 @@ h4 {
   margin: 1em;
   margin-bottom: 1.5em;
   opacity: 0;
+  pointer-events: none;
 }
 /* 
 .hidden {

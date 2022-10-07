@@ -52,8 +52,10 @@ btn.addEventListener('click', function () {
 
 function hideAnswer() {
   info.style.opacity = 0;
+  info.style.pointerEvents = 'none';
 }
 
 function showAnswer() {
   info.style.opacity = 1;
+  info.style.pointerEvents = 'auto';
 }
