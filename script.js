@@ -85,17 +85,7 @@ function getWidth(newWidth) {
 function setWidth() {
   getWidth(width);
   pntg.style.width = `${width}%`;
-}
-
-function setRandomWidth() {
-  let randomWidth = getRandomInt(5, 50);
-  pntg.style.width = `${randomWidth}%`;
-}
-
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min);
+  pntg.style.margin = '0 auto';
 }
 
 function showAnswer() {
