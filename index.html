@@ -25,6 +25,7 @@
         </div>
         <button id="new-painting"><span>🎨</span> New Painting</button>
         <div class="dimensions">
+          <h5>Update Dimensions for Next Round:</h4>
           <div class="slider">
             <label id="painting-height" for="height">Height</label>
             <input
@@ -36,7 +37,6 @@
               step="1"
               value="20"
               onchange="updateGrid(this.value)"
-              oninput="updateLabel(this.value)"
             />
           </div>
           <div class="slider">
@@ -50,7 +50,6 @@
               step="1"
               value="20"
               onchange="updateGrid(this.value)"
-              oninput="updateLabel(this.value)"
             />
           </div>
         </div>
