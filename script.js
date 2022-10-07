@@ -1,11 +1,21 @@
 // DOM variables
 const painting = document.querySelector('.painting');
 const info = document.querySelector('.info');
-let newPaintingBtn = document.querySelector('#new-painting');
+const container = document.querySelector('#container');
+const subheading = document.querySelector('.subheading');
+const startBtn = document.getElementById('start');
+const newPaintingBtn = document.querySelector('#new-painting');
 let pntg = document.querySelector('.painting');
 let title = document.querySelector('.title');
 let artist = document.querySelector('.artist');
 let year = document.querySelector('.year');
+
+// Start playing; unhides the main content and starts the game
+startBtn.addEventListener('click', () => {
+  subheading.classList.remove('hidden');
+  container.classList.remove('hidden');
+  startBtn.remove();
+});
 
 // Constructor function to add new paintings
 function Painting(pntg, title, artist, year) {

@@ -20,6 +20,11 @@ h1 {
   margin-top: 1em;
   margin-bottom: 0;
 }
+
+#start {
+  margin-top: 1rem;
+}
+
 h4 {
   margin-top: 0.5em;
   color: red;
@@ -30,7 +35,7 @@ h5 {
   padding: 0;
   font-size: 1rem;
 }
-.container {
+#container {
   width: 70%;
   max-width: 1080px;
   min-height: 75vh;
@@ -40,6 +45,12 @@ h5 {
   justify-content: center;
   /* border: 2px solid red; */
 }
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .painting {
   background-image: url(img/sunday-in-the-park.jpeg);
   background-repeat: no-repeat;
@@ -83,7 +94,7 @@ p {
   font-weight: bold;
 }
 
-#new-painting {
+button {
   background-color: #555;
   color: white;
   border: none;
@@ -92,7 +103,7 @@ p {
   border-radius: 10px;
 }
 
-#new-painting:hover {
+button:hover {
   background-color: black;
   cursor: pointer;
 }
