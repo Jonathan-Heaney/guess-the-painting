@@ -6,6 +6,7 @@ painting.addEventListener('click', () => {
   showAnswer();
   painting.style.backgroundPosition = 'center';
   painting.style.height = '75vh';
+  painting.style.width = '100%';
 });
 
 let btn = document.querySelector('.newPainting');
@@ -50,6 +51,7 @@ btn.addEventListener('click', function () {
   hideAnswer();
   setRandomPosition();
   setRandomHeight();
+  setRandomWidth();
   pntg.style.transition = 'none';
 });
 
@@ -62,13 +64,18 @@ function setRandomPosition() {
   let randomXPosition = Math.floor(Math.random() * 100);
   let randomYPosition = Math.floor(Math.random() * 100);
   pntg.style.backgroundPosition = `${randomXPosition}%, ${randomYPosition}%`;
-  console.log(randomXPosition, randomYPosition);
 }
 
 function setRandomHeight() {
-  let randomHeight = getRandomInt(100, 300);
-  console.log(randomHeight);
-  pntg.style.height = `${randomHeight}px`;
+  let randomHeight = getRandomInt(5, 50);
+  pntg.style.height = `${randomHeight}%`;
+}
+
+function getDimensions() {}
+
+function setRandomWidth() {
+  let randomWidth = getRandomInt(5, 50);
+  pntg.style.width = `${randomWidth}%`;
 }
 
 function getRandomInt(min, max) {
