@@ -59,5 +59,3 @@ function showAnswer() {
   info.style.opacity = 1;
   info.style.pointerEvents = 'auto';
 }
-
-//Check

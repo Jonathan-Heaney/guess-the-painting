@@ -37,17 +37,18 @@ h4 {
   background-image: url(img/sunday-in-the-park.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0%;
   height: 75vh;
   width: 50px;
   cursor: pointer;
-  transition: all 0.4s ease-in;
+  transition: all 0.4s ease-out;
   border-radius: 5px;
 }
 
 .check {
   width: 100%;
   background-size: contain;
+  background-position: center;
   cursor: default;
 }
 
