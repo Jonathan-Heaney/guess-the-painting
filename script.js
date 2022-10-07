@@ -55,8 +55,29 @@ const sundayAfternoon = new Painting(
   '1884-1886'
 );
 
+const monaLisa = new Painting(
+  'img/mona-lisa.jpeg',
+  'Mona Lisa',
+  'Leonardo da Vinci',
+  '1503-1519'
+);
+
+const arnolfini = new Painting(
+  'img/arnolfini-portrait.jpeg',
+  'The Arnolfini Portrait',
+  'Jan van Eyck',
+  '1434'
+);
+
 // Add all paintings created with the constructor function to the paintings array
-const paintings = [birthOfVenus, starryNight, theKiss, sundayAfternoon];
+const paintings = [
+  birthOfVenus,
+  starryNight,
+  theKiss,
+  sundayAfternoon,
+  monaLisa,
+  arnolfini,
+];
 
 // Event listener when you click on the small version of the painting to check the answer.
 // Shows the full painting and the information/answer
@@ -110,11 +131,16 @@ function setRandomPosition() {
   let randomXPosition = Math.floor(Math.random() * 100);
   let randomYPosition = Math.floor(Math.random() * 100);
   pntg.style.backgroundPosition = `${randomXPosition}%, ${randomYPosition}%`;
+  console.log(randomXPosition, randomYPosition);
+}
+
+function setPosition() {
+  pntg.style.backgroundPosition = '100%';
 }
 
 // Setting dimensions
-let height = 20;
-let width = 20;
+let height = 25;
+let width = 25;
 
 //Get the desired height from the user-input slider; default is 20%
 function getHeight(newHeight) {

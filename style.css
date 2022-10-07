@@ -54,8 +54,6 @@ h5 {
 
 .painting {
   background-repeat: no-repeat;
-  height: 20%;
-  width: 20%;
   cursor: pointer;
   border-radius: 5px;
 }
