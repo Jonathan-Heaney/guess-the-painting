@@ -23,32 +23,36 @@
           <p class="artist">Georges Seurat</p>
           <p class="year">1884-1886</p>
         </div>
-        <button class="newPainting"><span>🎨</span> New Painting</button>
+        <button id="new-painting"><span>🎨</span> New Painting</button>
         <div class="dimensions">
-          <label id="painting-height" for="height">Height</label>
-          <input
-            type="range"
-            name="height"
-            id="height"
-            min="1"
-            max="100"
-            step="1"
-            value="20"
-            onchange="updateGrid(this.value)"
-            oninput="updateLabel(this.value)"
-          />
-          <label id="painting-width" for="width">Width</label>
-          <input
-            type="range"
-            name="width"
-            id="width"
-            min="1"
-            max="100"
-            step="1"
-            value="20"
-            onchange="updateGrid(this.value)"
-            oninput="updateLabel(this.value)"
-          />
+          <div class="slider">
+            <label id="painting-height" for="height">Height</label>
+            <input
+              type="range"
+              name="height"
+              id="height"
+              min="1"
+              max="100"
+              step="1"
+              value="20"
+              onchange="updateGrid(this.value)"
+              oninput="updateLabel(this.value)"
+            />
+          </div>
+          <div class="slider">
+            <label id="painting-width" for="width">Width</label>
+            <input
+              type="range"
+              name="width"
+              id="width"
+              min="1"
+              max="100"
+              step="1"
+              value="20"
+              onchange="updateGrid(this.value)"
+              oninput="updateLabel(this.value)"
+            />
+          </div>
         </div>
       </div>
     </div>

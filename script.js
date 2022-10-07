@@ -9,7 +9,7 @@ painting.addEventListener('click', () => {
   painting.style.width = '100%';
 });
 
-let btn = document.querySelector('.newPainting');
+let btn = document.querySelector('#new-painting');
 let pntg = document.querySelector('.painting');
 let title = document.querySelector('.title');
 let artist = document.querySelector('.artist');
