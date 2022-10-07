@@ -5,7 +5,7 @@ painting.addEventListener('click', () => {
   painting.classList.add('check');
   showAnswer();
   painting.style.backgroundPosition = 'center';
-  painting.style.height = '500px';
+  painting.style.height = '75vh';
 });
 
 let btn = document.querySelector('.newPainting');
