@@ -52,13 +52,16 @@ const paintings = [birthOfVenus, starryNight, theKiss];
 
 // Event listener when you click on the small version of the painting to check the answer.
 // Shows the full painting and the information/answer
-painting.addEventListener('click', () => {
+painting.addEventListener('click', showPainting);
+
+function showPainting() {
   painting.classList.add('check');
   showAnswer();
+  subheading.classList.add('hidden');
   painting.style.backgroundPosition = 'center';
   painting.style.height = '75vh';
   painting.style.width = '100%';
-});
+}
 
 // Event listener for the 'New Painting' button
 newPaintingBtn.addEventListener('click', setNewPainting);
@@ -80,6 +83,7 @@ function setPaintingInfo() {
   pntg.style.backgroundImage = `url(${paintings[random].pntg})`;
   pntg.classList.add('painting');
   pntg.classList.remove('check');
+  subheading.classList.remove('hidden');
 }
 
 // Hide/show the info section at the bottom
