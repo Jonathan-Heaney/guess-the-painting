@@ -69,6 +69,34 @@ const arnolfini = new Painting(
   '1434'
 );
 
+const theScream = new Painting(
+  'img/the-scream.jpeg',
+  'The Scream',
+  'Edvard Munch',
+  '1893'
+);
+
+const nightWatch = new Painting(
+  'img/night-watch.jpeg',
+  'The Night Watch',
+  'Rembrandt',
+  '1642'
+);
+
+const gardenEarthlyDelights = new Painting(
+  'img/garden-earthly.jpeg',
+  'The Garden of Earthly Delights',
+  'Hieronymus Bosch',
+  'c. 1500'
+);
+
+const impressionSunrise = new Painting(
+  'img/impression-sunrise.jpeg',
+  'Impression: Sunrise',
+  'Claude Monet',
+  '1872'
+);
+
 // Add all paintings created with the constructor function to the paintings array
 const paintings = [
   birthOfVenus,
@@ -77,6 +105,10 @@ const paintings = [
   sundayAfternoon,
   monaLisa,
   arnolfini,
+  theScream,
+  nightWatch,
+  gardenEarthlyDelights,
+  impressionSunrise,
 ];
 
 // Event listener when you click on the small version of the painting to check the answer.
