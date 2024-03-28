@@ -1,7 +1,7 @@
 // DOM variables
 const painting = document.querySelector('.painting');
 const info = document.querySelector('.info');
-const container = document.querySelector('#container');
+const container = document.getElementById('container');
 const subheading = document.querySelector('.subheading');
 const startBtn = document.getElementById('start');
 const newPaintingBtn = document.querySelector('#new-painting');
@@ -139,8 +139,8 @@ function setPosition() {
 }
 
 // Setting dimensions
-let height = 25;
-let width = 25;
+let height = 30;
+let width = 30;
 
 //Get the desired height from the user-input slider; default is 20%
 function getHeight(newHeight) {
