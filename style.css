@@ -122,8 +122,16 @@ span {
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
+  body,
+  #container {
+    /* height: auto; */
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
   #container {
     width: 100%; /* Use the full width for mobile devices */
+    padding-bottom: 20px;
   }
 
   .painting,
