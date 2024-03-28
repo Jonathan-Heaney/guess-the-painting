@@ -119,3 +119,26 @@ span {
   justify-content: center;
   gap: 5px;
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  #container {
+    width: 100%; /* Use the full width for mobile devices */
+  }
+
+  .painting,
+  .info {
+    flex-direction: column; /* Stack info sections vertically on narrow screens */
+  }
+
+  .dimensions,
+  .slider {
+    width: 100%; /* Ensure sliders use available width */
+  }
+
+  h1,
+  .subheading,
+  p {
+    padding: 0 20px; /* Adds padding to text elements to prevent edge-to-edge text */
+  }
+}
